@@ -1,33 +1,32 @@
-# My Jupyter Notebook Docker Project
+# Homework 8
 
-## How to Run
+Этот проект включает Jupyter Notebook, работающий в Docker контейнере.
 
-1. Clone the repository:
+## Как запустить
 
-    ```sh
-    git clone https://github.com/your-username/my-docker-jupyter-project.git
+1. Склонируйте репозиторий:
+    ```bash
+    git clone https://github.com/Assel13/homework8.git
     ```
 
-2. Navigate to the project directory:
-
-    ```sh
-    cd my-docker-jupyter-project
+2. Перейдите в директорию проекта:
+    ```bash
+    cd homework8
     ```
 
-3. Build and run the container using a different port (e.g., 8889):
-
-    ```sh
-    docker run -p 8889:8888 my-jupyter-notebook
+3. Постройте Docker-образ:
+    ```bash
+    docker build -t my-jupyter-notebook .
     ```
 
-4. Access Jupyter Notebook at:
-
+4. Запустите Docker контейнер:
+    ```bash
+    docker run -p 8888:8888 my-jupyter-notebook
     ```
-    http://localhost:8889/?token=your_token_here
-    ```
 
-## Docker Image
-You can pull the Docker image from Docker Hub:
+5. Откройте Jupyter Notebook в браузере по адресу: [http://localhost:8888](http://localhost:8888). Если потребуется токен, проверьте вывод терминала.
 
-```sh
-docker pull your-dockerhub-username/my-jupyter-notebook
+## Содержание
+
+- [notebooks](./notebooks): директория с Jupyter ноутбуками.
+- [data](./data): данные для анализа.
