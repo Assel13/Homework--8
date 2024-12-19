@@ -6,4 +6,4 @@
 
 1. Склонируйте репозиторий:
    ```bash
-   git clone https://github.com/Assel13/ВАШ_РЕПОЗИТОРИЙ.git
+   git clone https://github.com/Assel13/C:\Users\HP\Downloads\Homework8\homework8.git
